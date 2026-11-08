@@ -1,3 +1,15 @@
 catamaran body = shape of the ida. two paralel cylinder in the bottom of body and they are in water and top of them there is the main part of the ship
-kill switch = button for the kill the all electricity and action in ship for emergency situations
+kill-switch = button for the kill the all electricity and action in ship for emergency situations
 engines (blue robotics t200) = there are 2 engines and they are in the butt of the ship under water typa engines they are
+differential drive principal = independent movement of each engine make the ship to turn or slow. according to this principal the ship is capable of rotating on its own axis
+center of gravity = to make the center of gravity in near to the center of ship we placed the items symetricaly in the ship body for example heaviest things are batteries and the are in the parallel cylinder for each
+security requirements = kill-switch button, a ring on the butt of the ship to pull back the ship in emergency, security protection for engine's fans
+lidar = enables the ship to be aware of its surroundings. it sends laser for all ways of ship to scan obstacle and sends the results to the jetson orin nano
+camera = same duty as lidar but it makes it with recording video and analyzing it to find obstacles and again sends the results to the jetson orin nano
+jetson orin nano = its like sense center in human body. the duty is getting the results from senses (camera and lidar) and sends them to the brain of the ship
+autopilot (pixhawk 2.4.8) = it is the brain of the ship and it makes the big decision about direction, what to do about obstacles or speed etc. and its making this decisions with sense that it got from jetson
+pdb (power distribution board) = it distributes volts from battery he makes 3 groups from primary source 1 is 19.2V its for the engines, 2 is 19.5V its for the jetson and 3 is 5V its for pixhawk, GPS, LoRa, lidar and camera
+IMU = its getting results from barometer, compass and GPS. It forward the results to the pixhawk to make decisions.
+YOLO V8 = its duty is understanding the color and shapes in camera's recording. its important in the competition because there are pantoon in diffrent colour and ship needs to understand whic pontoon is obstacle or which is the aim
+
+
